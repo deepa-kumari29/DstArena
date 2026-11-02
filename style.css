@@ -366,7 +366,7 @@ nav a:hover {
    TABLET RESPONSIVE
 ===================================== */
 
-/* @media (max-width: 992px) {
+ @media (max-width: 992px) {
 
     .hero-section {
         flex-direction: column;
@@ -399,14 +399,14 @@ nav a:hover {
     .gallery-track img {
         height: 120px;
     }
-} */
+} 
 
 
 /* =====================================
    MOBILE RESPONSIVE
 ===================================== */
 
-/* @media (max-width: 600px) {
+ @media (max-width: 600px) {
 
     .hero-section {
         padding: 40px 20px;
@@ -438,7 +438,7 @@ nav a:hover {
     .gallery-track img {
         height: 105px;
     }
-} */
+} 
 
 
 /*=============== STATISTICS SECTION ==========*/
