@@ -24,7 +24,7 @@ header {
 /* ==========TOP SECTION======= */
 .top-header {
     width: 100%;
-    height: 45px;
+    height: 35px;
     background-color: darkblue;
     color: white;
     display: flex;
@@ -57,6 +57,49 @@ header {
 .top-right span:hover {
     transform: rotateY(-5deg) scale(1.15);
     color: rgb(216, 220, 231);
+}
+
+.address-icon {
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+  .top-header {
+    padding: 0 20px;
+  }
+
+  .label {
+    display: none;
+  }
+
+  .top-left,
+  .top-right {
+    gap: 20px;
+  }
+
+  .top-header i,
+  .top-left > span {
+    font-size: 18px;
+  }
+
+    .top-right .address {
+        display: none;
+    }
+
+  
+    .address-icon {
+        display: inline;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .top-header i,
+  .top-left > span {
+    font-size: 14px;
+  }
+
 }
 
 
