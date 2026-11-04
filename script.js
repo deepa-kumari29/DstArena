@@ -121,6 +121,29 @@ updateSlider();
 startAutoSlide();
 
 
+// ===============menu button
+
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("nav");
+
+  toggle.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open);
+    toggle.innerHTML = open
+      ? '<i class="fa-solid fa-xmark"></i>'
+      : '<i class="fa-solid fa-bars"></i>';
+  });
+
+  // link par click karne se menu band ho jaye
+  nav.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => {
+      nav.classList.remove("open");
+      toggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    })
+  );
+
+
+
 //=============== main header
 
 window.addEventListener("scroll", function () {

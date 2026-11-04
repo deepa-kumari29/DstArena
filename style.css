@@ -171,9 +171,6 @@ nav a:hover {
 
 }
 
-/* .nav a i:hover{
-    background-color: red;
-} */
 
 /*===========RIGHT SIDE===========*/
 .header-right {
@@ -202,6 +199,72 @@ nav a:hover {
     font-size: 14px;
     cursor: pointer;
 }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #222;
+  padding: 4px 8px;
+}
+
+@media (max-width: 1000px) {
+    .main-header {
+        padding: 0px 20px;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display:block;
+    }
+
+    nav{
+        display:none;
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+       background: #fff;
+       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+
+    }
+
+    nav.open {
+      display: flex;
+    }
+
+  nav a {
+    padding: 14px 20px;
+    border-top: 1px solid #eee;
+  }
+
+  .header-right .btn-register {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    height: 40px;
+  }
+
+  .header-right {
+    gap: 8px;
+  }
+
+  .header-right button:not(.menu-toggle) {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
+
+
 
 
 /*================= hero-section=============*/
