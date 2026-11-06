@@ -1436,16 +1436,6 @@ nav a:hover {
     border: none;
 }
 
-/* MOBILE */
-
-/* @media (max-width: 1170px){
-
-    .about-heading p {
-        font-size: 15px;
-    }
-
-} */
-
 @media (max-width: 1070px) {
 
     .about-section {
@@ -1524,7 +1514,7 @@ nav a:hover {
 
 .reviews {
     padding: 80px 6%;
-    background: #fff;
+    background: #a31010;
 }
 
 .review-heading {
@@ -1533,14 +1523,23 @@ nav a:hover {
 }
 
 .review-heading h3 {
-  display: inline-block;
-  padding: 4px 18px;
-  font-size: 24px;
-  font-weight: 600;
-  color: #fff;
-  background: var(--primary);
-  border: 2px solid #8095cf;
-  border-radius: 30px;
+   font-size: 26px;
+    text-align: center;
+    border: 2px solid #8095cf;
+    padding: 3px 18px;
+    display: inline-block;
+    border-radius: 30px;
+    transform: none;
+    background: #10265e;
+   color: #fff;
+   font-weight: 600;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+   gap: 8px;
+   width: fit-content;
+   /* margin-bottom: 40px; */
+   margin-top: 30px;
 }
 
 .review-heading h4 {
@@ -1550,19 +1549,19 @@ nav a:hover {
   color: var(--primary);
 }
 
+.review-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
 
-
-
-/* ---------- Cards ki grid (3 cards) ---------- */
-
-/* .review-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
 }
 
 
-.review-card {
+
+
+
+
+/* .review-card {
   display: flex;
   flex-direction: column;
   padding: 28px;
@@ -1589,7 +1588,7 @@ nav a:hover {
   font-size: 16px;
   line-height: 1.7;
   color: var(--text);
-}
+} */
 
 /* naam + course: hamesha card ke neeche */
 /* .review-card > div:last-child {
