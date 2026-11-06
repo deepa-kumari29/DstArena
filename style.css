@@ -1525,41 +1525,117 @@ nav a:hover {
 .reviews {
     padding: 80px 6%;
     background: #fff;
-    text-align: center;
 }
 
-.review-heading{
-    display: inline-block;
-    padding: 4px 18px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #fff;
-    background: var(--primary);
-    border: 2px solid #8095cf;
-    border-radius: 30px;
-
+.review-heading {
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-.review-heading h2{
-     font-size: 26px;
-    text-align: center;
-    border: 2px solid #8095cf;
-    padding: 3px 18px;
-    display: inline-block;
-    border-radius: 30px;
-    transform: none;
-    background: #10265e;
-   color: #fff;
-   font-weight: 600;
-   display: flex;
-   justify-content: center;
-   margin: 0 auto;
-   gap: 8px;
-   width: fit-content;
-   margin-bottom: 40px;
+.review-heading h3 {
+  display: inline-block;
+  padding: 4px 18px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--primary);
+  border: 2px solid #8095cf;
+  border-radius: 30px;
+}
+
+.review-heading h4 {
+  margin-top: 22px;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--primary);
 }
 
 
+
+
+/* ---------- Cards ki grid (3 cards) ---------- */
+
+/* .review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(16, 38, 94, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(16, 38, 94, 0.15);
+}
+
+.review-card .star {
+  margin-bottom: 14px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.review-card p {
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+/* naam + course: hamesha card ke neeche */
+/* .review-card > div:last-child {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.review-card b {
+  display: block;
+  font-size: 17px;
+  color: var(--primary);
+}
+
+.review-card small {
+  font-size: 14px;
+  color: var(--muted);
+} */ 
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1070px) {
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================= MOBILE ================= */
+
+/* @media (max-width: 700px) {
+  .reviewes {
+    padding: 60px 5%;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-heading h3 {
+    font-size: 20px;
+  }
+
+  .review-heading h4 {
+    font-size: 22px;
+  }
+} */
 
 /*========enquiry section===========*/
 
