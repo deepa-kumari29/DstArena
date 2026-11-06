@@ -1559,79 +1559,7 @@ nav a:hover {
    margin-bottom: 40px;
 }
 
-.review-heading h2{
-    
-}
 
-
-
-/* 3 cards ki grid */
-.t-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
-  text-align: left;
-}
-
-/* ek card */
-.t-card {
-  padding: 28px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  box-shadow: 0 4px 14px rgba(16, 38, 94, 0.08);
-}
-
-.t-card .stars {
-  margin-bottom: 12px;
-  color: var(--accent);
-  letter-spacing: 3px;
-}
-
-.t-card p {
-  margin-bottom: 20px;
-  line-height: 1.7;
-  color: var(--text);
-}
-
-/* student ka naam + photo */
-.t-user {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.t-av {
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  font-weight: 600;
-  color: #fff;
-  background: var(--primary-2);
-  border-radius: 50%;
-}
-
-.t-user b {
-  display: block;
-  color: var(--primary);
-}
-
-.t-user small {
-  color: var(--muted);
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 900px) {
-  .t-grid {
-    grid-template-columns: 1fr;   /* 3 ki jagah 1 card */
-  }
-
-  .testimonials > h2 {
-    font-size: 26px;
-  }
-}
 
 /*========enquiry section===========*/
 
