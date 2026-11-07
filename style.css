@@ -1555,7 +1555,7 @@ nav a:hover {
 
 }
 
-.review-card {
+/* .review-card {
   display: flex;
   flex-direction: column;
   padding: 28px;
@@ -1563,7 +1563,7 @@ nav a:hover {
   border: 1px solid var(--border);
   border-radius: 16px;
   box-shadow: 0 4px 14px rgba(16, 38, 94, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; */
 
 
 
