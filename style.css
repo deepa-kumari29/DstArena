@@ -179,7 +179,7 @@ nav a:hover {
 
 /*===========RIGHT SIDE===========*/
 .header-right {
-    width: 30px;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -1317,7 +1317,8 @@ nav a:hover {
     column-gap: 50px;
     display: grid;
     grid-template-columns: 48% 52%;
-    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+    /* background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%); */
+    background: #e7e6fb;
     transform: none;
     position: relative;
     padding: 50px 4%;
@@ -1559,7 +1560,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     padding:28px;
-    background: var(--blue);
+    background-color: #adc8e9cb;
     border: 1px solid var(--border);
     border-radius: 16px;
     box-shadow: 0 4px 14px rgba(16, 38, 94, 0.08);
@@ -1578,20 +1579,14 @@ nav a:hover {
 
 }
 
-.re
-
-
-/* 
-
 .review-card p {
   margin-bottom: 22px;
   font-size: 16px;
   line-height: 1.7;
   color: var(--text);
-} */
+} 
 
-/* naam + course: hamesha card ke neeche */
-/* .review-card > div:last-child {
+.review-card > div:last-child {
   margin-top: auto;
   padding-top: 16px;
   border-top: 1px solid var(--border);
@@ -1606,7 +1601,9 @@ nav a:hover {
 .review-card small {
   font-size: 14px;
   color: var(--muted);
-} */ 
+}
+
+
 
 /* ================= TABLET ================= */
 
@@ -1614,11 +1611,11 @@ nav a:hover {
   .review-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} 
 
 /* ================= MOBILE ================= */
 
-/* @media (max-width: 700px) {
+ @media (max-width: 700px) {
   .reviewes {
     padding: 60px 5%;
   }
@@ -1634,7 +1631,7 @@ nav a:hover {
   .review-heading h4 {
     font-size: 22px;
   }
-} */
+} 
 
 /*========enquiry section===========*/
 
