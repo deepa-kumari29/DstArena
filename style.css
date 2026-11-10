@@ -179,7 +179,7 @@ nav a:hover {
 
 /*===========RIGHT SIDE===========*/
 .header-right {
-    width: 3cap;
+    width: 30px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
