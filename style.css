@@ -1442,7 +1442,7 @@ nav a:hover {
     .about-section {
         grid-template-columns: 1fr;
         padding: 60px 25px;
-        gap: 20px;
+        gap: 25px;
     }
 
     .about-img {
@@ -1454,6 +1454,14 @@ nav a:hover {
         grid-column: 1;
         grid-row: auto;
         padding-right: 0;
+        display: contents;
+    }
+
+    .about-heading h4 {
+        order:-1;
+        margin: 0 auto;
+        text-align: center;
+        width: fit-content;
     }
 
     .about-img img {
@@ -1505,10 +1513,10 @@ nav a:hover {
         font-size: 17px;
     }
 
-    /* .about-item {
-        margin-top: 20px;
-    } */
-
+    .about-heading h4 {
+        font-size: 22px;
+    }
+      
 }
 
 /* ================= REVIEWS SECTION ================= */
