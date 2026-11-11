@@ -269,7 +269,41 @@ nav a:hover {
 }
 
 
+/* ==============dropdown===============*/
 
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.drpdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background: white;
+    border-radius: 6px;
+    box-shadow:  0 6px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 100;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    
+}
+
+.drpdown-menu a {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.drpdown-menu a:hover {
+    background: #e0e7ff;
+}
 
 
 /*================= hero-section=============*/
