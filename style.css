@@ -191,7 +191,7 @@ nav a:hover {
     border: none;
     background: darkblue;
     color: white;
-    padding: 9px 20px;
+    padding: 9px 12px;
     border-radius: 20px;
     font-size: 14px;
     cursor: pointer;
@@ -222,6 +222,7 @@ nav a:hover {
 
     .menu-toggle {
         display:block;
+        font-size: 13px;
     }
 
     nav{
@@ -247,6 +248,7 @@ nav a:hover {
     padding: 14px 20px;
     border-top: 1px solid #eee;
   }
+  
 
   .header-right .btn-register {
         display: none;
