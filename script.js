@@ -121,6 +121,17 @@ updateSlider();
 startAutoSlide();
 
 
+// =================dropdown
+
+document.querySelectorAll(".dropdown > a").forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      link.parentElement.classList.toggle("open");
+    }
+  });
+});
+
 // ===============menu button
 
   const toggle = document.getElementById("menuToggle");
@@ -134,7 +145,7 @@ startAutoSlide();
       : '<i class="fa-solid fa-bars"></i>';
   });
 
-  // link par click karne se menu band ho jaye
+
   nav.querySelectorAll("a").forEach((a) =>
     a.addEventListener("click", () => {
       nav.classList.remove("open");

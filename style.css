@@ -306,6 +306,45 @@ nav a:hover {
 }
 
 
+/* laptop: hover par khule */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .dropdown:hover > a i {
+    transform: rotate(180deg);
+  }
+}
+
+.dropdown > a i {
+  transition: transform 0.3s ease;
+}
+
+/* mobile: click par khule */
+@media (max-width: 768px) {
+  .dropdown {
+    display: block;
+  }
+  .dropdown-menu {
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: transparent;
+  }
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu a {
+    color: inherit;
+    padding-left: 30px;
+  }
+}
+
 /*================= hero-section=============*/
 
 .hero-section {
