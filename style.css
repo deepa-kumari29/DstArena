@@ -239,7 +239,7 @@ nav a:hover {
        background: #fff;
        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
       z-index: 100;
-      
+      overflow-y: auto; 
 
     }
 
@@ -256,6 +256,11 @@ nav a:hover {
   .header-right .btn-register {
         display: none;
     }
+
+    .main-header.scrolled {
+         left: 5%; width: 90%; 
+        }
+   
 }
 
 @media (max-width: 600px) {
@@ -271,6 +276,22 @@ nav a:hover {
     padding: 6px 10px;
     font-size: 13px;
   }
+
+    .top-header { 
+        padding: 0 12px; 
+    }
+
+    .main-header {
+         padding: 0 12px; 
+    }
+
+    .main-header.scrolled { 
+        left: 2%; width: 96%; border-radius: 40px; 
+    
+    }
+    .logo img { 
+        width: 55px; height: 55px;
+     }
 }
 
 
@@ -415,6 +436,7 @@ nav a:hover {
     color: white;
     margin-bottom: 25px;
     max-width: 500px;
+    width: 100%;
 }
 
 .hero-buttons {
@@ -556,7 +578,7 @@ nav a:hover {
     .hero-section {
         flex-direction: column;
         align-items: flex-start;
-
+         min-height: auto; 
         padding: 50px 6%;
         gap: 30px;
     }
@@ -584,6 +606,13 @@ nav a:hover {
     .gallery-track img {
         height: 120px;
     }
+
+    .hero-tag {
+        position: static;
+        margin-bottom: 18px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 5px 14px;
 } 
 
 
@@ -623,7 +652,26 @@ nav a:hover {
     .gallery-track img {
         height: 105px;
     }
+
+     .hero-btn { 
+        padding: 12px 18px;
+     }
 } 
+
+@media (max-width: 400px) {
+
+    .hero-gallery { 
+        height: 300px; 
+    }
+
+    .gallery-column {
+         width: 105px; 
+        }
+
+    .gallery-track img { 
+        height: 90px; 
+    }
+}
 
 
 /*=============== STATISTICS SECTION ==========*/
@@ -671,7 +719,77 @@ nav a:hover {
     color: #14264f;
 }
 
+@media (max-width: 1000px) {
+    .stats {
+        border-radius: 50px;
+        padding: 12px 8px;
+    }
 
+    .stat-item {
+        gap: 8px;
+        padding: 8px 6px;
+    }
+
+    .stat-icon {
+        font-size: 22px;
+    }
+
+    .stat-item h2 {
+        font-size: 24px;
+    }
+
+    .stat-item p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 700px) {
+    .stats {
+        grid-template-columns: 1fr 1fr;
+        border-radius: 28px;
+        width: 92%;
+        margin-top: -25px;
+        padding: 8px;
+    }
+
+    .stat-item {
+        border-right: 0;
+        border-bottom: 1px solid #d0d3d8;
+        padding: 14px 8px;
+    }
+
+    .stat-item:nth-child(odd) {
+        border-right: 1px solid #d0d3d8;
+    }
+
+    .stat-item:nth-child(n+3) {
+        border-bottom: 0;
+    }
+
+    .stat-item h2 {
+        font-size: 22px;
+    }
+
+    .stat-item p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 380px) {
+    .stat-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 2px;
+    }
+
+    .stat-item h2 {
+        font-size: 20px;
+    }
+
+    .stat-item p {
+        font-size: 12px;
+    }
+}
 
 /*============THESIS CARD============*/
 
@@ -693,29 +811,28 @@ nav a:hover {
     margin: 0;
     z-index: 10;
     display: inline-block;
-    padding: 6px 18px;
+    white-space: nowrap;
+    padding: clamp(3px, 0.8vw, 6px) clamp(12px, 3vw, 18px);
     border: 2px solid #8095cf;
     border-radius: 30px;
-    font-size: 23px;
-
-  background: #10265e;
-  color: #fff;
-  font-weight: 600;
-
+    font-size: clamp(15px, 3.2vw, 23px);
+    background: #10265e;
+    color: #fff;
+    font-weight: 600;
 }
 
 .thesis-heading h2 {
     position: absolute;
-    /* top: 755px; */
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
+    top: clamp(50px, 9vw, 75px);
+    width: 90%;
+    text-align: center;
+    line-height: 1.25;
     color: rgb(47, 65, 114);
-    font-size: 42px;
+    font-size: clamp(20px, 4.6vw, 42px);
     z-index: 10;
-    top:75px ;
-    
-
 }
 
 
@@ -893,8 +1010,12 @@ nav a:hover {
         height: 35px;
         font-size: 20px;
     }
-}
 
+    .popular-thesis {
+        height: 500px;
+    }
+
+}
 /* ================= LEARNING CARDS ================= */
 
 .learning-section {
@@ -909,31 +1030,25 @@ nav a:hover {
 }
 
 .learning-heading h4 {
-   
-    font-size: 26px;
+    font-size: clamp(16px, 3.4vw, 26px);
     text-align: center;
     border: 2px solid #8095cf;
-    padding: 3px 18px;
+    padding: clamp(3px, 0.8vw, 5px) clamp(12px, 3vw, 18px);
     display: inline-block;
     border-radius: 30px;
-    display: inline-block;
     transform: none;
-
     background: #10265e;
-  color: #fff;
-  font-weight: 600;
-
+    color: #fff;
+    font-weight: 600;
 }
 
 .learning-heading h2 {
-    margin: 22px;
-    padding: 22px;
-    font-size: 45px;
-    display: flex;
+    margin: clamp(12px, 2.5vw, 22px);
+    padding: clamp(10px, 2.5vw, 22px);
+    font-size: clamp(20px, 4.2vw, 45px);
+    line-height: 1.25;
     text-align: center;
-    justify-content: center;
     color: rgb(47, 65, 114);
-
 }
 
 .learning-grid {
@@ -1554,6 +1669,12 @@ nav a:hover {
         grid-row: auto;
         margin-left: 0;
     }
+   
+
+    .about-heading p { 
+        font-size: clamp(16px, 2.4vw, 19px); 
+    }
+
 
 }
 
@@ -1713,6 +1834,11 @@ nav a:hover {
   .review-heading h4 {
     font-size: 22px;
   }
+
+    .reviews {
+        padding: 60px 5%;
+         }
+
 } 
 
 /*========enquiry section===========*/
@@ -1845,6 +1971,22 @@ nav a:hover {
 }
 
 
+@media (max-width: 992px) {
+    .enquiry-wrap { gap: 40px; }
+}
+@media (max-width: 600px) {
+    .enquiry { padding: 50px 5%; }
+    .enquiry-form { padding: 22px; }
+    .enquiry-text p { font-size: 16px; }
+    .enquiry-form input,
+    .enquiry-form select,
+    .enquiry-form textarea { font-size: 16px; }
+
+}
+
+
+
+
 /*============FOOTER===========*/
 
 .footer {
@@ -1865,6 +2007,7 @@ transition: color 0.25s ease, transform 0.25s ease;
     color: #fff;
     transform: translateY(-2px);
 }
+
 .footer-container {
     max-width: 1400px;
     margin: auto;
@@ -1940,6 +2083,7 @@ footer h3 {
     display: flex;
     gap: 12px;
 }
+
 .social-link span,
 .social-link a {
     width: 45px;
@@ -1954,6 +2098,7 @@ footer h3 {
     cursor: pointer;
     transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
 }
+
 .social-link span:hover,
 .social-link a:hover {
     transform: translateY(-5px);
