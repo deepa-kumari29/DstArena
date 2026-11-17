@@ -2034,6 +2034,9 @@ footer h3 {
     }
 }
 
+
+
+
 nav .dropdown-menu a {
   display: block;
   width: 100%;
@@ -2070,53 +2073,25 @@ nav .dropdown-menu a {
 }
 
 
-@media (max-width: 768px) {
-  /* dropdown poori width le */
-  #nav .dropdown {
-    display: block;
-    width: 100%;
-  }
 
-  /* Home, Blog, Contact aur dropdown ke links, sab ek jaise */
+
+@media (max-width: 1160px) {
   #nav > a,
   #nav .dropdown > a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin: 0;
     padding: 16px 25px;
-    border-bottom: 1px solid #e5e7eb;
-    font-size: inherit;
-    color: inherit;
     box-sizing: border-box;
-  }
-
-  /* andar ke options */
-  #nav .dropdown-menu {
-    position: static;
-    display: none;
-    width: 100%;
-    max-height: none;
-    overflow: visible;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    box-shadow: none;
-    border-radius: 0;
-    background: #f8fafc;
-  }
-
-  #nav .dropdown.open .dropdown-menu {
-    display: block;
-  }
-
-  #nav .dropdown-menu a {
-    padding: 14px 25px 14px 45px;
     border-bottom: 1px solid #e5e7eb;
-    white-space: normal;
+    color: #111;
+    text-decoration: none;
+    font-size: inherit;
+    background: transparent;
+     transform: none;
+  
   }
 
-  #nav .dropdown.open > a i {
-    transform: rotate(180deg);
-  }
 }

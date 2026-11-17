@@ -125,7 +125,7 @@ startAutoSlide();
 
 document.querySelectorAll(".dropdown > a").forEach(function (link) {
   link.addEventListener("click", function (e) {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 1160) {
       e.preventDefault();
       link.parentElement.classList.toggle("open");
     }
