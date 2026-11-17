@@ -138,6 +138,10 @@ header {
     width: 22%;
 }  */
 
+.logo {
+    flex-shrink: 0;
+}
+
 
   .logo img {
     width: 75px;
@@ -153,11 +157,9 @@ header {
 /*=========NAVIGATION=========*/
 nav {
     width: 58%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 30px;
 }
 
@@ -214,7 +216,7 @@ nav a:hover {
   padding: 4px 8px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1160px) {
     .main-header {
         padding: 0px 20px;
         justify-content: space-between;
@@ -237,6 +239,7 @@ nav a:hover {
        background: #fff;
        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
       z-index: 100;
+      
 
     }
 
@@ -308,7 +311,7 @@ nav a:hover {
 }
 
 
-@media (min-width: 769px) {
+@media (min-width: 1160px) {
   .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
@@ -324,7 +327,7 @@ nav a:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1160px) {
   .dropdown {
     display: block;
   }
@@ -379,7 +382,7 @@ nav a:hover {
     letter-spacing: 2px;
     margin-bottom: 20px;
     position: absolute;
-    top: -68px;
+    top: -60px;
     /* left: 15%; */
     color: #2b3657;
     background-color: #d9dce4;
@@ -389,6 +392,7 @@ nav a:hover {
     border-radius: 30px;
 
 }
+
 
 .text-box h1 {
     font-size: clamp(32px, 3.2vw, 46px);
@@ -449,6 +453,7 @@ nav a:hover {
     background: #ffffff;
     color: #073b70;
 }
+
 
 
 /* ==========Gallery design =========*/
@@ -1693,7 +1698,7 @@ nav a:hover {
 /* ================= MOBILE ================= */
 
  @media (max-width: 700px) {
-  .reviewes {
+  .review{
     padding: 60px 5%;
   }
 
@@ -2057,7 +2062,7 @@ nav .dropdown-menu a {
   transform: none;
 }
 
-/* mouse link se menu tak le jaate waqt menu band na ho */
+
 #nav .dropdown-menu {
   top: 100%;
   margin-top: 0;
