@@ -492,7 +492,7 @@ nav .dropdown-menu a {
     justify-content: center;
     gap: 10px;
     padding: 14px 22px;
-    background:#d9dce4;
+    background:#ffffff;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -509,6 +509,7 @@ nav .dropdown-menu a {
 .secondary-btn {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.6);
+    color: white;
 }
 
 .secondary-btn:hover {
@@ -656,10 +657,42 @@ nav .dropdown-menu a {
     }
 } 
 
+/* 800px ke baad: gallery hide + sab kuch center */
+@media (max-width: 800px) {
+    .hero-gallery {
+        display: none;
+    }
 
-/* =====================================
-   MOBILE RESPONSIVE
-===================================== */
+    .hero-section {
+        min-height: auto;
+        padding-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-box {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-box p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-tag {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* ===============MOBILE RESPONS======================== */
 
  @media (max-width: 600px) {
 
@@ -673,7 +706,7 @@ nav .dropdown-menu a {
     }
 
     .text-box p {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.7;
     }
 
