@@ -148,6 +148,8 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
 
   nav.querySelectorAll("a").forEach((a) =>
     a.addEventListener("click", () => {
+        if (a.parentElement.classList.contains("dropdown")) return;
+        
       nav.classList.remove("open");
       toggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
     })
