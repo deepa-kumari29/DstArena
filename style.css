@@ -378,7 +378,7 @@ nav .dropdown-menu a {
     }
 }
 
-   /* SMALL MOBILE  (600px and below) */
+
   
 @media (max-width: 600px) {
 
@@ -466,7 +466,7 @@ nav .dropdown-menu a {
 
 .text-box h1 span {
     display: block;
-    color: #6978ff;
+    color: #2981e8;
     margin-top: 5px;
 }
 
@@ -706,7 +706,7 @@ nav .dropdown-menu a {
     }
 
     .text-box p {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.7;
     }
 
@@ -1049,15 +1049,15 @@ nav .dropdown-menu a {
 }
 
 
-/* ===== THESIS SLIDER (TABLET + MOBILE) ===== */
+/* ===== THESIS SLIDER (tablet + mobile) ===== */
+
 
 @media (max-width: 1070px) {
-
     .popular-thesis {
         --w: clamp(240px, 62vw, 500px);
         height: 440px;
     }
-
+isko ache se likho code mai change nhi krna
     .thesis-slider {
         top: 40px;
     }
@@ -1073,35 +1073,49 @@ nav .dropdown-menu a {
         display: block;
     }
 
-    .thesis-slide.center {
-        transform: translateX(-50%) scale(1);
+    .popular-thesis {
+        --w: clamp(240px, 62vw, 500px);
+        height: 500px;          
     }
 
-    .thesis-slide.left-1 {
-        transform: translateX(calc(-50% - var(--w) * 0.78)) scale(0.78);
+    .thesis-slider {
+        top: 100px;            
     }
 
-    .thesis-slide.left-2 {
-        transform: translateX(calc(-50% - var(--w) * 1.3)) scale(0.6);
+
+    .thesis-slide.center  { transform: translateX(-50%) scale(1); }
+    .thesis-slide.left-1  { transform: translateX(calc(-50% - var(--w) * 0.78)) scale(0.78); }
+    .thesis-slide.left-2  { transform: translateX(calc(-50% - var(--w) * 1.3)) scale(0.6); }
+    .thesis-slide.right-1 { transform: translateX(calc(-50% + var(--w) * 0.78)) scale(0.78); }
+    .thesis-slide.right-2 { transform: translateX(calc(-50% + var(--w) * 1.3)) scale(0.6); }
+    .thesis-slide.hidden  { transform: translateX(-50%) scale(0.4); }
+}
+
+@media (max-width: 600px) {
+    .popular-thesis {
+        height: 360px;
     }
 
-    .thesis-slide.right-1 {
-        transform: translateX(calc(-50% + var(--w) * 0.78)) scale(0.78);
+    .thesis-slider {
+        top: 50px;
     }
 
-    .thesis-slide.right-2 {
-        transform: translateX(calc(-50% + var(--w) * 1.3)) scale(0.6);
+    .arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 22px;
     }
 
-    .thesis-slide.hidden {
-        transform: translateX(-50%) scale(0.4);
-    }
+    .prev { left: 8px; }
+    .next { right: 8px; }
+
+    
 }
 
 
 /* ===== MOBILE RESPONSIVE ===== */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
 
     .popular-thesis {
         height: 360px;
@@ -1120,7 +1134,7 @@ nav .dropdown-menu a {
     .next {
         right: 8px;
     }
-}
+} */
 
 /* ================= LEARNING CARDS ================= */
 
@@ -1553,23 +1567,27 @@ nav .dropdown-menu a {
 }
 
 /* =========Mobile ==============*/
-@media screen and (max-width: 576px) {
-    .main-container {
-        /* display: block;
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-        overflow: hidden; */
 
+@media screen and (max-width: 600px) {
+
+    .main-container {
         display: flex;
         flex-direction: column;
         width: 100%;
+        height: auto;          
         margin: 0 0 20px 0;
         padding: 0 15px;
         overflow: visible;
         gap: 20px;
-
+        box-sizing: border-box; 
     }
+
+
+
+     .main-container:nth-of-type(n) {
+        transform: none;
+    }
+
 
     .main-heading h4 {
         font-size: 18px;
@@ -1584,21 +1602,22 @@ nav .dropdown-menu a {
 
     .main-card {
         position: relative;
+        top: auto;             
+        left: auto;
+        transform: none;      
         width: 100%;
-        min-height: auto;
+        min-height: 0;         
         height: auto;
         margin: 0;
         padding: 20px;
         box-sizing: border-box;
+        overflow: visible;     
     }
-
-
 
     .main-card p {
         font-size: 15px;
         margin-bottom: 15px;
     }
-
 }
 
 
@@ -1613,7 +1632,7 @@ nav .dropdown-menu a {
     display: grid;
     grid-template-columns: 48% 52%;
     /* background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%); */
-    background: #e7e6fb;
+    background: #d5d4f9;
     transform: none;
     position: relative;
     padding: 50px 4%;
@@ -1890,9 +1909,10 @@ nav .dropdown-menu a {
 
 .review-card p {
   margin-bottom: 22px;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.7;
-  color: var(--text);
+  /* color: var(--text); */
+  color: rgb(0, 0, 0);
 } 
 
 .review-card > div:last-child {
@@ -1951,13 +1971,12 @@ nav .dropdown-menu a {
 
 .enquiry{
     padding: 70px 7%;
-    background: linear-gradient(135deg, #eef0fb, #e3e0fb);
+   background: linear-gradient( 212deg, #f4f6ff, #dfdded);
     font-family: Arial, sans-serif;
 
 }
 
 .enquiry-wrap{
-    /* max-width: 1100px; */
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1.1fr;
