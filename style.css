@@ -1048,48 +1048,80 @@ nav .dropdown-menu a {
     background: white;
 }
 
-/*============= TABLET ==============*/
+
+/* ===== THESIS SLIDER (TABLET + MOBILE) ===== */
+
 @media (max-width: 1070px) {
-    .slider {
-        height: 350px;
-        margin: 20px auto;
-        border-radius: 8px;
-    }
-
-    .thesis-slide img {
-        width: 450px;
-        display: block;
-        object-fit: cover;
-    }
-
-}
-
-
-/* ===========Mobile ==============*/
-@media (max-width: 600px) {
-    .slider {
-        height: 250px;
-        margin: 20px auto;
-        border-radius: 8px;
-    }
-
-    .thesis-slide img {
-        width: 250px;
-        display: block;
-        object-fit: cover;
-    }
-
-    .btn {
-        width: 35px;
-        height: 35px;
-        font-size: 20px;
-    }
 
     .popular-thesis {
-        height: 500px;
+        --w: clamp(240px, 62vw, 500px);
+        height: 440px;
     }
 
+    .thesis-slider {
+        top: 40px;
+    }
+
+    .thesis-slide {
+        width: var(--w);
+        left: 50%;
+    }
+
+    .thesis-slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .thesis-slide.center {
+        transform: translateX(-50%) scale(1);
+    }
+
+    .thesis-slide.left-1 {
+        transform: translateX(calc(-50% - var(--w) * 0.78)) scale(0.78);
+    }
+
+    .thesis-slide.left-2 {
+        transform: translateX(calc(-50% - var(--w) * 1.3)) scale(0.6);
+    }
+
+    .thesis-slide.right-1 {
+        transform: translateX(calc(-50% + var(--w) * 0.78)) scale(0.78);
+    }
+
+    .thesis-slide.right-2 {
+        transform: translateX(calc(-50% + var(--w) * 1.3)) scale(0.6);
+    }
+
+    .thesis-slide.hidden {
+        transform: translateX(-50%) scale(0.4);
+    }
 }
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 600px) {
+
+    .popular-thesis {
+        height: 360px;
+    }
+
+    .arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 22px;
+    }
+
+    .prev {
+        left: 8px;
+    }
+
+    .next {
+        right: 8px;
+    }
+}
+
 /* ================= LEARNING CARDS ================= */
 
 .learning-section {
